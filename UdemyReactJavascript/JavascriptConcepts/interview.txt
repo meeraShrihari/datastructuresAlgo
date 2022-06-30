@@ -1,0 +1,85 @@
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #main {
+  	background-color: grey;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;\
+    align-items: center;
+
+  }
+  
+  .toggle-on {
+  	background-color: green;
+    width: 50px;
+    height: 30px;
+    border-radius: 30%;
+    margin-top: 50px;
+ 
+  }
+  
+  .toggle-off {
+  	background-color: yellow;
+    width: 50px;
+    height: 30px;
+    border-radius: 30%;
+    margin-top: 50px;
+    display: flex;
+ 		align-items: right;
+  }
+  
+  .container {
+  	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;\
+    align-items: center;
+  	
+  }
+  
+  button {
+  	
+  }
+</style>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="main">
+      <div id="toggle-on" class="toggle-on">
+        <button id="toggle"></button>
+      </div>
+    </div>
+    
+  </body>
+</html>
+<script>
+  // You can use the console window at the bottom
+  //var h1 = document.querySelector('h1');
+  //console.log(h1.textContent);
+  const toggle = document.getElementById('toggle');
+  const toggle_on = document.getElementById('toggle-on');
+  
+  toggle.addEventListener('click', () => {
+    console.log(toggle_on.classList["0"]);
+    if(toggle_on.classList["0"] === "toggle-on") {
+      toggle_on.classList.add('toggle-off');
+      toggle_on.classList.remove('toggle-on');
+    } else {
+    	toggle_on.classList.add('toggle-on');
+    	toggle_on.classList.remove('toggle-off');
+    }
+  })
+                          
+</script>
+
+
+

@@ -1,0 +1,29 @@
+Recursion Problems
+
+1. I/p - O/p method
+2. Extended I/p - O/p method
+
+1. I/p - O/p method
+a to e -> uses IBH method -> Induction, base condition, hypothesis
+f to h -> uses Recursion Tree -> I/p O/p method
+
+a. Print 1 to n / n to 1
+b. Sort an array
+c. Delete middle element in a stack
+d. Remove duplicates from string
+e. count the number of occurences
+f. subset
+g. Permutations with space(variations) - with case change and many more
+h. Joseplus problem
+
+2. Extended I/p - O/p method
+
+a. Binary string with # of 1's greater than # of 0's
+b. Generate balanced paranthesis
+
+
+4 Approaches to Recursion
+--------------------------
+1. Recursion Tree -> I/p O/p method
+2. Base condition - Induction - Hypothesis <- Making I/p smaller (IBH method)
+3. Choice Diagram (used in Dynamic Programming)

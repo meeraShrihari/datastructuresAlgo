@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 2px;;
+}
+
+.grid-item {
+    margin: 2px;
+    width: 160px;
+    height: 160px;
+    background-color: lightgoldenrodyellow;
+}

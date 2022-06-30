@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="www.google.com/search">
+      <p>
+        <label for="user">Name:</label>
+        <input name="user" id="user" type="text" />
+      </p>
+      <p>
+        <label for="student">Subject:</label>
+        <select name="subject" id="subject">
+          <option value="math">Math</option>
+          <option value="English">English</option>
+        </select>
+      </p>
+      <p>
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" value="male/>
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </p>
+      <p>
+        <label for="pass">Pass:</label>
+        <input id="pass" name="passorfail" type="checkbox" value="pass" />
+        <label for="fail">Fail:</label>
+        <input name="passorfail" id="fail" type="checkbox" value="fail" />
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
+
+http://127.0.0.1:5500/html/www.google.com/search?user=Meera+Bhaskaran&subject=math&gender=female&passorfail=pass

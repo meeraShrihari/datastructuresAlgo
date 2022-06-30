@@ -1,0 +1,41 @@
+
+- JSON stands for JavaScript Object Notation
+- Lightweight interchange format progamming language
+- designed for human readable data interchange
+- common data format used for asynchronous browser server communication
+- Used to transfer info between 2 different applications
+
+- It has an Object structure
+- key value pairs, where key is a string always
+- undefined, function, not allowed. null and other variables are allowed as value
+
+
+JSON Parser
+- Used to parse the JSON data into object to use its value.
+How to Parse JSON in JavaScript
+- var json = '{"name":"Meera", "age": 39}';
+- var obj = JSON.parse(json); => converts json to JavaScript object
+
+How to create JSON object from JavaScript
+- var obj = {};
+    obj['name'] = "meera";
+    obj['age'] = 39;
+    obj['marks'] = [30,40,50];
+
+How to validate JSON in JavaScript
+-
+function isValidJSON(jsonData) {
+    try {
+        JSON.parse(jsonData);
+        return true;
+    } catch(e) {
+        return false;
+    }
+}
+
+var json = '{"name":"Meera", "age": 39}';
+isValidJSON(json);
+
+How to convert json object to json string
+- var jsonObj = '{"name":"Meera", "age": 39}';
+- JSON.stringify(jsonObj);

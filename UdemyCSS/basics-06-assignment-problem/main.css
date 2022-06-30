@@ -1,0 +1,20 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color:yellow;
+    font-family: sans-serif;
+}
+
+li {
+    font-family: inherit;
+}
+.secLi code {
+    color: green;
+}
+code {
+    color: red;
+    font-family: monospace;
+}
+
